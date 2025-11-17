@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendButton = document.querySelector('.send-button');
 
     // const API_URL = 'http://127.0.0.1:8000/perguntar';
-    const API_URL = 'https://deploy-backend-n3ao.onrender.com/perguntar';
+    const API_URL = 'https://deploy-backend-sjcc.onrender.com/perguntar';
 
     function ScrollToBottom() {
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
