@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const input = document.querySelector('input[type="text"]');
     const sendButton = document.querySelector('.send-button');
 
-    const API_URL = 'http://127.0.0.1:8000/api/pergunta';
+    const API_URL = 'http://127.0.0.1:8000/perguntar';
 
     function ScrollToBottom() {
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const botResponseText = await response.json();
 
-            AddMessage(botResponseText, 'assistant');
+            AddMessage(botResponseText.resposta, 'assistant');
         } catch (error) {
             console.error('Erro na comunicação com a API:', error);
 
